@@ -6,13 +6,15 @@ import { CustomerdetailComponent } from './customerdetail/customerdetail.compone
 import { CustomerlistComponent } from './customerlist/customerlist.component';
 import { LoginComponent } from './login/login.component';
 import { ServicesComponent } from './services/services.component';
+import { HttpComponent } from './http/http.component';
 
 export const router: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'list', component: CustomerlistComponent },
   { path: 'detail/:id', component: CustomerdetailComponent },
-  { path: 'services', component: ServicesComponent }
+  { path: 'services', component: ServicesComponent },
+  { path: 'test', component: HttpComponent}
 ];
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(router);

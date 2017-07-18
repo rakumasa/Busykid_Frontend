@@ -21,11 +21,11 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let user of users | search: 'firstname,lastname,email': query" class="active">
-            <td>{{user.id}}</td>
-            <td>{{user.firstname}}</td>
-            <td>{{user.lastname}}</td>
-            <td>{{user.email}}</td>
+        <tr *ngFor="let user of users | search: 'FirstName,LastName,Email': query" class="active">
+            <td>{{user.Id}}</td>
+            <td>{{user.FirstName}}</td>
+            <td>{{user.LastName}}</td>
+            <td>{{user.Email}}</td>
             <td><a [routerLink]="['/detail',user.id]">Refund</a></td>
         </tr>
     </tbody>

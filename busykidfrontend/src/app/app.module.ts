@@ -5,16 +5,15 @@ import { HttpModule } from '@angular/http';
 import { routes } from './app.router';
 
 import { AppComponent } from './app.component';
-import { ServicesComponent } from './services/services.component';
 import { CustomerlistComponent } from './customerlist/customerlist.component';
 import { CustomerdetailComponent } from './customerdetail/customerdetail.component';
 import { LoginComponent } from './login/login.component';
 import { SearchPipe } from './filter/filter.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    ServicesComponent,
     CustomerlistComponent,
     CustomerdetailComponent,
     LoginComponent,
