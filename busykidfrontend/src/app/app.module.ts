@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routes } from './app.router';
 
@@ -21,12 +21,14 @@ import { DataService } from './data.service'
     LoginComponent,
     SearchPipe,
     RefundComponent
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routes
+    routes,
+    ReactiveFormsModule
   ],
   providers: [DataService],
   bootstrap: [ AppComponent ]
