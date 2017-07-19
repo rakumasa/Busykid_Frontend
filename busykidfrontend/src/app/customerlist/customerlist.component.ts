@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Pipe, PipeTransform } from '@angular/core';
 import { Http } from '@angular/http';
 
+
 @Component({
   selector: 'app-customerlist',
   templateUrl: './customerlist.component.html',
@@ -22,6 +23,7 @@ export class CustomerlistComponent implements OnInit {
   navigateToDetail(user) {
         this.router.navigate(["detail", { id: user.id }]);
   }
+
 
   ngOnInit() {
     this.http.get('http://localhost:55472/users').subscribe((res) => { const getallCustomer = res.json();

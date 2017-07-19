@@ -9,6 +9,8 @@ import { CustomerlistComponent } from './customerlist/customerlist.component';
 import { CustomerdetailComponent } from './customerdetail/customerdetail.component';
 import { LoginComponent } from './login/login.component';
 import { SearchPipe } from './filter/filter.component';
+import { RefundComponent } from './refund/refund.component';
+import { DataService } from './data.service'
 
 
 @NgModule({
@@ -17,7 +19,8 @@ import { SearchPipe } from './filter/filter.component';
     CustomerlistComponent,
     CustomerdetailComponent,
     LoginComponent,
-    SearchPipe
+    SearchPipe,
+    RefundComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,7 @@ import { SearchPipe } from './filter/filter.component';
     HttpModule,
     routes
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-customerdetail',
@@ -8,17 +9,27 @@ import { Router } from '@angular/router';
 })
 export class CustomerdetailComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,private route: ActivatedRoute) { }
+
+  public detailId;
 
   ngOnInit() {
+
+    let id=this.route.snapshot.params['id'];
+    this.detailId = id;
   }
 
-  navigateToDetail(user) {
-          this.router.navigate(["list"]);
+  navigateToRefund(detailId) {
+        this.router.navigate(["refund", detailId]);
   }
 
-      navigateToList() {
-          this.router.navigate(["list"])
+
+  // navigateToRefund() {
+  //         this.router.navigate(["refund", { id: }]);
+  // }
+
+  navigateToList() {
+        this.router.navigate(["list"])
   }
 
 }
