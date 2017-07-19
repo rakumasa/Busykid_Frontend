@@ -27,7 +27,6 @@ export class CustomerlistComponent implements OnInit {
 
   ngOnInit() {
     this.http.get('http://localhost:55472/users').subscribe((res) => { const getallCustomer = res.json();
-      console.log(getallCustomer);
       this.users = getallCustomer;
     })
   }

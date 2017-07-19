@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 import { FormControl, FormGroup } from '@angular/forms';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Http } from '@angular/http';
 
 
 @Component({
@@ -12,7 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 })
 export class CustomerdetailComponent implements OnInit {
 
-  constructor(private router: Router,private route: ActivatedRoute) {
+  constructor(private router: Router,private route: ActivatedRoute, private http: Http) {
   }
 
   userForm = new FormGroup({
@@ -40,6 +41,8 @@ export class CustomerdetailComponent implements OnInit {
   navigateToList() {
         this.router.navigate(["list"])
   }
+
+
 
 
 }
