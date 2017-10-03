@@ -22,6 +22,6 @@ I worked with a company who want to add below features to their product.
  - Send refund information to bank/credit card company
 
 
-- How this project is built
+**How this project is built**
  - Front-end: Angular, HTML, CSS, Javascript
  - Back-end: C#, .NET , SQL
