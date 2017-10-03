@@ -6,16 +6,15 @@ Link to a back-end github: https://github.com/rakumasa/Busykid_Backend
 
 You can see a preview of this app in action in the following video preview:
 
-https://youtu.be/
+https://youtu.be/4rTpQluQMTU
 
-[![Watch the video](images/.png)](https://youtu.be/)
+[![Watch the video](images/BusyKid.png)](https://youtu.be/4rTpQluQMTU)
 
 
 **About the project**
 
 I worked with a company who want to add below features to their product.
 
-- New features
  - Search customer information in database
  - Select "action item" for a customer
  - Enter the amount of refund
